@@ -1,8 +1,262 @@
-<!doctype html>
-<html>
-  <head>
-  </head>
-  <body>
-    <div>hello</div>
-  </body>
-</html>
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>fu lu shou</title>
+            <link rel="shortcut icon" href="icon1.ico" type="image/x-icon" />
+            <style>
+                body {
+                    position:relative;
+                    /* background-image: radial-gradient(red, green, blue);
+                    background-color: rgb(238, 235, 231); */
+                    background-image: repeating-conic-gradient(pink 15%, yellow 20%);;
+                    white-space: pre;
+                    cursor: auto; 
+                }
+                p {
+                    width: 78.7vw;
+                    white-space: normal;
+                }
+                @font-face {
+                    font-family: xsong;
+                    src: url("./fulushou/xsong.ttc");
+                }
+                #intro{
+                    cursor: help; 
+                    z-index: 307;
+                    filter: blur(0px);
+                    position:relative;
+                    color:rgb(195, 29, 29);
+                    background-color: rgb(235, 172, 65);
+                    /* text-shadow:0px 30px 0px rgb(255, 255, 255); */
+                    border-left:0px solid rgb(238, 255, 0);
+                    width:fit-content;
+                    overflow-wrap: break-word;
+                    line-height: 20px;
+                    word-break: break-all;
+                    left: 3vw;
+                    top: 0vh;
+                    font-size: 20px;
+                    font-family: xsong;
+                    text-align: left;
+                }
+                #intro1{
+                    cursor: help; 
+                    z-index: 307;
+                    filter: blur(0px);
+                    position:relative;
+                    color:rgb(235, 172, 65);
+                    background-color: rgb(195, 29, 29);
+                    /* text-shadow:0px 30px 0px rgb(255, 255, 255); */
+                    text-decoration: underline;
+                    border-left:0px solid yellow;
+                    width:fit-content;
+                    overflow-wrap: break-word;
+                    line-height: 20px;
+                    top: 0vh;
+                    font-size: 20px;
+                    font-family: xsong;
+                    text-align: left;
+                }
+                #sx{
+                    cursor: help; 
+                    z-index: 200;
+                    filter: blur(0px);
+                    position:fixed;
+                    color:rgb(235, 172, 65);
+                    background-color: rgb(195, 29, 29);
+                    /* text-shadow:0px 30px 0px rgb(255, 255, 255); */
+                    border-left:0px solid rgb(238, 255, 0);
+                    width:fit-content;
+                    overflow-wrap: break-word;
+                    line-height: 50px;
+                    word-break: break-all;
+                    left: 0px;
+                    top: 0vh;
+                    font-size: 50px;
+                    font-family: xsong;
+                    text-align: left;
+                }
+                .sculp{
+                    z-index:110;
+                    position: fixed;
+                    width: 20vw;
+                    height: 60vh;
+                    top: 25vh;
+                }
+                #sculp1{
+                    filter: brightness(200%) drop-shadow(15px 30px 25px violet);
+                    top: 25vh;
+                    left: 8vw;
+                }#sculp1:hover {
+                    filter: brightness(100%) drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.239));
+                }
+                #sculp2{
+                    filter: brightness(400%) drop-shadow(15px 30px 25px greenyellow);
+                    top: 25vh;
+                    left: 28vw;
+                }#sculp2:hover {
+                    filter: brightness(100%) drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.239));
+                }
+                #sculp3{
+                    filter: brightness(400%) drop-shadow(15px 30px 25px yellow);
+                    top: 25vh;
+                    left: 48vw;
+                }#sculp3:hover {
+                    filter: brightness(100%) drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.239));
+                }
+                #fu{
+                    transition: filter 0.5s;
+                    transition: opacity 0.5s;
+                    filter: blur(10vw);
+                    z-index: 100;
+                    position:static;
+                    filter:brightness(1);
+                    width: 30vw;
+                    left: 19vw;
+                    top: 60vh;
+                    opacity: .5; 
+                }#fu:hover{
+                    z-index: 100;
+                    filter: blur(0px);
+                    opacity: .8; 
+                }
+                #cc{
+                    cursor: progress; 
+                    transition: transform 6s;
+                    z-index:2;
+                    filter: brightness(6);
+                    position: fixed;
+                    width: 70vw;
+                    height: 70vw;
+                    top: 10vh;
+                    left: 67vw;
+                    /* opacity: .1; */
+                }#cc:hover{
+                    filter: brightness(7);
+                    transform: rotate(360deg);
+                }
+                #cc1{
+                    cursor: progress; 
+                    transition: transform 6s;
+                    z-index:1;
+                    filter: brightness(6);
+                    position: fixed;
+                    width: 70vw;
+                    height: 70vw;
+                    top: -28vh;
+                    left: -22vw;
+                    opacity: .4;
+                }#cc1:hover{
+                    filter: brightness(7);
+                    transform: rotate(360deg);
+                }
+                #cc2{
+                    cursor: progress; 
+                    transition: transform 6s;
+                    z-index:1;
+                    filter: brightness(6);
+                    position:fixed;
+                    width: 70vw;
+                    height: 70vw;
+                    top: 3vh;
+                    left: 42vw;
+                    opacity: .4;
+                }#cc2:hover{
+                    filter: brightness(7);
+                    transform: rotate(360deg);
+                }
+                #cc3{
+                    cursor: progress; 
+                    transition: transform 6s;
+                    z-index:1;
+                    filter: brightness(6);
+                    position:fixed;
+                    width: 70vw;
+                    height: 70vw;
+                    top: 62vh;
+                    left: 2vw;
+                    opacity: .4;
+                }#cc3:hover{
+                    filter: brightness(7);
+                    transform: rotate(360deg);
+                }
+                #icon{
+                    /* background-color: blue; */
+                    opacity: .0;
+                    z-index: 311;
+                    padding-left: 0;
+                    padding-top: 26vh;
+                    padding-bottom: 0;
+                    padding-right: 0;
+                    position: sticky;
+                    left: 30vw;
+                    top: 97vh;
+                    width: 8vw;
+                }#icon:hover{opacity: 1;}
+            </style>
+        </head>
+        <body>
+            <div id="sx">🪦</div>
+            <div id="fls">
+                <div onclick="innerHTML = Date()" id="intro"><p>至心皈命礼。中枢紫微。南方长庚。北斗文曲。三星列照。注册乾坤福气。书录人间禄运。察访生灵寿生。<span id="intro1">赐福注禄延寿。</span>星移中天。岁时更新。心诚三敬。万事致成。喜财随行。行督人间。不赐歹心恶蛮人。光照随意丹诚身。大悲大愿。大圣大慈。中天北极紫微帝君。九天司禄文昌帝君。南天延寿长生帝君。福禄寿三星大天尊。至心皈命礼。中枢紫微。南方长庚。北斗文曲。三星列照。注册乾坤福气。书录人间禄运。察访生灵寿生。星移中天。岁时更新。心诚三敬。万事致成。喜财随行。行督人间。不赐歹心恶蛮人。光照随意丹诚身。大悲大愿。大圣大慈。中天北极紫微帝君。九天司禄文昌帝君。南天延寿长生帝君。福禄寿三星大天尊。至心皈命礼。中枢紫微。南方长庚。北斗文曲。三星列照。注册乾坤福气。书录人间禄运。察访生灵寿生。<span id="intro1">赐福注禄延寿。</span>星移中天。岁时更新。心诚三敬。万事致成。喜财随行。行督人间。不赐歹心恶蛮人。光照随意丹诚身。大悲大愿。大圣大慈。中天北极紫微帝君。九天司禄文昌帝君。南天延寿长生帝君。福禄寿三星大天尊。</p></div>            
+                </div>
+            <img id="fu" src="./fulushou/fu.jpg">
+            <img id="cc" src="./fulushou/cc.png">
+            <div id="cc0">
+                <img class="sculp" id="sculp1" src="./fulushou/sculp1.png">
+                <img class="sculp" id="sculp2" src="./fulushou/sculp2.png">
+                <img class="sculp" id="sculp3" src="./fulushou/sculp3.png">
+            
+                <img id="cc1" src="./fulushou/cc.png">
+                <img id="cc2" src="./fulushou/cc.png">
+                <img id="cc3" src="./fulushou/cc.png">
+            </div>
+            <a href=index.html><img id="icon" src="icon1.png"></a>
+            <!-- <script src="fulushou.js"></script> -->
+            <script>
+                let wINdo = [ "福", "禄" , "寿" , "🪦" ]
+                let allcolors = ["blue", "green", "yellow", "red", "black", "white", "pink", "purple", "navy", "orange", "turquoise"]
+
+                document.getElementById("sx").onclick = function() {
+                    document.getElementById("sx").innerHTML = wINdo[Math.floor(Math.random() * wINdo.length)];
+                }
+
+                document.getElementById("fls").onmouseover = function () {
+                    document.getElementById("intro").style.backgroundColor = allcolors[Math.floor(Math.random() * wINdo.length)];
+                    document.getElementById("intro").style.opacity = ".5";
+                    document.getElementById("intro1").style.color = "blue";
+                    document.getElementById("intro1").style.backgroundImage = "conic-gradient(green, red, yellow, red, yellow, green)";
+                };
+
+                document.getElementById("fls").onmouseout = function () {
+                    document.getElementById("intro").style.backgroundColor = "blue";
+                    document.getElementById("intro").style.opacity = "1";
+                    document.getElementById("intro1").style.color = "red";
+                    document.getElementById("intro1").style.backgroundColor = allcolors[Math.floor(Math.random() * wINdo.length)];
+                };
+
+                document.getElementById("cc0").onmouseover = function () {
+                    document.getElementById("sculp1").style.opacity = ".5";
+                    document.getElementById("sculp2").style.display = "none";
+                    document.getElementById("sculp3").style.opacity = "1";
+                    
+                    document.getElementById("cc1").style.opacity = ".5";
+                    document.getElementById("cc2").style.display = "none";
+                    document.getElementById("cc3").style.opacity = "1";
+                };
+
+                document.getElementById("cc0").onmouseout = function () {
+                    document.getElementById("sculp1").style.opacity = "1";
+                    document.getElementById("sculp2").style.display = "block";
+                    document.getElementById("sculp3").style.display = "block";
+                    
+                    document.getElementById("cc1").style.opacity = "1";
+                    document.getElementById("cc2").style.display = "block";
+                    document.getElementById("cc3").style.display = "block";
+                };
+            </script>
+        </body>
+    </html>
+
+    <!-- IMAGE SOURCES -->
